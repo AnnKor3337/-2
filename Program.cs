@@ -45,25 +45,28 @@ Console.WriteLine("результат: " + number); */
 
 
 /* Решение задачи 15
-
-int a;
-
-Console.WriteLine("Введите число от 1 до 7, обозначающее день недели: ");
-a = Convert.ToInt32(Console.ReadLine());
-
-if (a>=1 && a<=7)
+void day(int a)
 {
-    if (a>=1 && a<=5)
+    if (a>=1 && a<=7)
     {
-    Console.WriteLine(a + " - этот день не является выходным");
+        if (a>=1 && a<=5)
+        {
+        Console.WriteLine(a + " - этот день не является выходным");
+        }
+        else
+        {
+        Console.WriteLine(a + " - ура, выходной!");
+        }
     }
     else
-    {
-    Console.WriteLine(a + " - ура, выходной!");
-    }
+        {
+        Console.WriteLine(a + " - указанное число выходит из диапазона от 1 до 7 и не является днем недели!");
+        }
 }
-else
-    {
-    Console.WriteLine(a + " - указанное число выходит из диапазона от 1 до 7 и не является днем недели!");
-    }
+
+
+Console.WriteLine("Введите число от 1 до 7, обозначающее день недели: ");
+int a = Convert.ToInt32(Console.ReadLine());
+
+day(a);
     */
